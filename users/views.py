@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import User, Post
 from .forms import RegisterForm, LoginForm, PostForm
-from products.models import Product
 
 
 def login_required_custom(view_func):

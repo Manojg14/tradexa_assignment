@@ -29,7 +29,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'tradexa_project.urls'
+ROOT_URLCONF = 'tradexa_assignment.urls'
 
 TEMPLATES = [
     {
@@ -47,7 +47,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'tradexa_project.wsgi.application'
+WSGI_APPLICATION = 'tradexa_assignment.wsgi.application'
 
 # Two separate databases
 DATABASES = {
@@ -61,7 +61,7 @@ DATABASES = {
     }
 }
 
-DATABASE_ROUTERS = ['tradexa_project.routers.AppRouter']
+DATABASE_ROUTERS = ['tradexa_assignment.routers.AppRouter']
 
 AUTH_PASSWORD_VALIDATORS = []
 

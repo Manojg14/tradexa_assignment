@@ -1,5 +1,3 @@
-# products/views.py
-
 from django.shortcuts import render, redirect
 from .models import Product
 from .forms import ProductForm
