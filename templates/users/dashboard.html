@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard - Tradexa Technologies {% endblock %}
+{% block content %}
+
+<div class="dashboard-header">
+    <h1>Hello, <span>{{ user.first_name }}</span> 👋</h1>
+    <p>{{ user.email }}</p>
+</div>
+
+<!-- CREATE POST FORM -->
+<div class="card">
+    <h2>✍️ New Post</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.text }}
+            {{ form.text.errors }}
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:auto;padding:.6rem 2rem">
+            Publish Post
+        </button>
+    </form>
+</div>
+
+<!-- ALL POSTS -->
+<div class="card">
+    <h2>📝 Your Posts ({{ posts.count }})</h2>
+    {% if posts %}
+    <div class="posts-grid">
+        {% for post in posts %}
+        <div class="post-card">
+            <p>{{ post.text }}</p>
+            <div class="post-meta">
+                <span>📅 Created: {{ post.created_at|date:"d M Y, H:i" }}</span>
+                {% if post.updated_at != post.created_at %}
+                <span>✏️ Updated: {{ post.updated_at|date:"d M Y, H:i" }}</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <div class="icon">💬</div>
+        <p>No posts yet. Write your first one above!</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
