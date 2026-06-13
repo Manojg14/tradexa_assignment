@@ -52,8 +52,6 @@ cd tradexa_assignment
 ```bash
 python -m venv venv
 
-
-# On Windows
 venv\Scripts\activate
 ```
 
@@ -149,6 +147,36 @@ class Product(models.Model):
 ```
 
 ---
+
+## Conclusion
+
+This project successfully demonstrates the implementation of a Django-based multi-database architecture with custom user authentication, post management, and product catalog functionality. By separating the `users` and `products` applications into independent databases, the application showcases scalable database routing and clean project organization.
+
+The project also highlights Django's flexibility through custom session-based authentication, model relationships, admin integration, and a modern responsive user interface. Overall, this assignment reflects practical backend development skills, database management, and full-stack web application development using Django.
+
+---
+
+## Application Screenshots
+
+### Login Page
+
+![Login Page](static/images/login_page.PNG)
+
+### Registration Page
+
+![Register Page](images/register_page.PNG)
+
+### User Dashboard
+
+![Dashboard](images/dashboard_page.PNG)
+
+
+### Products Page
+
+![Products](images/product_page.PNG)
+
+---
+
 
 ## Author
 
