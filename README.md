@@ -160,20 +160,24 @@ The project also highlights Django's flexibility through custom session-based au
 
 ### Login Page
 
-![Login Page](static/images/login_page.PNG)
+![Login Page](static/images/loginpage.PNG)
 
 ### Registration Page
 
-![Register Page](images/register_page.PNG)
+![Register Page](static/images/registerpage.PNG)
 
 ### User Dashboard
 
-![Dashboard](images/dashboard_page.PNG)
+![Dashboard](static/images/dashboardpage.PNG)
 
 
 ### Products Page
 
-![Products](images/product_page.PNG)
+![Products](static/images/productspage.PNG)
+
+### Add Products Page
+
+![Products](static/images/addproductpage.PNG)
 
 ---
 
